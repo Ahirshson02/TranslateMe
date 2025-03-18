@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AA4DAFE22D8906A400B0E02A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AA4DAFE12D8906A400B0E02A /* FirebaseAuth */; };
+		AA4DAFE42D8906A400B0E02A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AA4DAFE32D8906A400B0E02A /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AA4DAF782D88D91000B0E02A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,33 @@
 		AA4DAF812D88D91000B0E02A /* Unit6-Project-TranslateMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit6-Project-TranslateMeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AA4DAFBF2D8903AB00B0E02A /* Exceptions for "Unit6-Project-TranslateMe" folder in "Unit6-Project-TranslateMe" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				mockData.json,
+			);
+			target = AA4DAF662D88D90E00B0E02A /* Unit6-Project-TranslateMe */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		AA4DAFC02D8903AB00B0E02A /* Exceptions for "Unit6-Project-TranslateMe" folder in "Compile Sources" phase from "Unit6-Project-TranslateMe" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = AA4DAF632D88D90E00B0E02A /* Sources */;
+			membershipExceptions = (
+				mockData.json,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AA4DAF692D88D90E00B0E02A /* Unit6-Project-TranslateMe */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AA4DAFBF2D8903AB00B0E02A /* Exceptions for "Unit6-Project-TranslateMe" folder in "Unit6-Project-TranslateMe" target */,
+				AA4DAFC02D8903AB00B0E02A /* Exceptions for "Unit6-Project-TranslateMe" folder in "Compile Sources" phase from "Unit6-Project-TranslateMe" target */,
+			);
 			path = "Unit6-Project-TranslateMe";
 			sourceTree = "<group>";
 		};
@@ -52,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4DAFE22D8906A400B0E02A /* FirebaseAuth in Frameworks */,
+				AA4DAFE42D8906A400B0E02A /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +143,8 @@
 			);
 			name = "Unit6-Project-TranslateMe";
 			packageProductDependencies = (
+				AA4DAFE12D8906A400B0E02A /* FirebaseAuth */,
+				AA4DAFE32D8906A400B0E02A /* FirebaseFirestore */,
 			);
 			productName = "Unit6-Project-TranslateMe";
 			productReference = AA4DAF672D88D90E00B0E02A /* Unit6-Project-TranslateMe.app */;
@@ -195,6 +228,9 @@
 			);
 			mainGroup = AA4DAF5E2D88D90E00B0E02A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA4DAFE02D8906A400B0E02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AA4DAF682D88D90E00B0E02A /* Products */;
 			projectDirPath = "";
@@ -552,6 +588,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA4DAFE02D8906A400B0E02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA4DAFE12D8906A400B0E02A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA4DAFE02D8906A400B0E02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AA4DAFE32D8906A400B0E02A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA4DAFE02D8906A400B0E02A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AA4DAF5F2D88D90E00B0E02A /* Project object */;
 }

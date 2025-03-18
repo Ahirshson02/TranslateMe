@@ -1,0 +1,13 @@
+//
+//  mockData.swift
+//  Unit6-Project-TranslateMe
+//
+//  Created by Debbie Hirshson on 3/17/25.
+//
+
+{"responseData":
+    {"translatedText":"Ciao Mondo!","match":1},
+    "quotaFinished":false,"mtLangSupported":null,"responseDetails":"",
+    "responseStatus":200,"responderId":null,
+    "exception_code":null,"matches":
+    [{"id":"777265549","segment":"Hello World!","translation":"Ciao Mondo!","source":"en-GB","target":"it-IT","quality":74,"reference":null,"usage-count":2,"subject":"","created-by":"MateCat","last-updated-by":"MateCat","create-date":"2025-03-09 18:28:47","last-update-date":"2025-03-09 18:28:47","match":1,"penalty":0}]}
